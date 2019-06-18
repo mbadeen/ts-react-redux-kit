@@ -1,15 +1,11 @@
 import { combineReducers } from 'redux';
 
-// interface initialState {
-//   undefined: undefined;
-// }
-
-const testReducer = (state = {}, action: string) => {
+const test = (state = {}, action: string) => {
   return state;
 };
 
 const rootReducer = combineReducers({
-  test: testReducer
+  test
 });
 
 export default rootReducer;
