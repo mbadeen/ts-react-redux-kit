@@ -1,10 +1,12 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { render } from 'react-dom';
-import App from './App';
+import App from './features/App';
+import store from './redux/store';
 
-// Allows for module loading instead of reloading the page.
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
-render(<App />, document.getElementById('app'));
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);

@@ -1,15 +1,18 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
+    'airbnb-typescript',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'prettier',
-    'prettier/react'
+    'plugin:prettier/recommended',
+    'prettier/react',
+    'prettier/@typescript-eslint'
   ],
+  env: {
+    browser: true,
+    node: true
+  },
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -20,8 +23,7 @@ module.exports = {
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/indent': 'off'
+    'import/no-extraneous-dependencies': 'off'
   },
   plugins: ['react-hooks', 'jsx-a11y'],
   settings: {
