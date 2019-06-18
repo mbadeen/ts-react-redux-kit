@@ -1,6 +1,6 @@
 module.exports = {
   hooks: {
-    'pre-commit': 'eslint --fix --ext ts,tsx,.js && stylelint **/*.css',
+    'pre-commit': 'yarn lint',
     'post-checkout': 'yarn install',
     'post-merge': 'yarn install',
     'post-rewrite': 'yarn install'
