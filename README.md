@@ -16,7 +16,7 @@ Starter kit for react/redux apps using typescript
 
 - Install node.js
 - Install yarn package manager
-- git clone [GitHub](git@github.com:mbadeen/ts-react-redux-kit.git)
+- git clone git@github.com:mbadeen/ts-react-redux-kit.git
 - run yarn install to install dependencies
 
 **Begin coding!**
