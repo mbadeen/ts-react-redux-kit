@@ -2,8 +2,9 @@
 
 Starter kit for react/redux apps using typescript
 
-### This kit has the following dependencies set up:
+### This kit includes the following:
 
+- webpack
 - typescript
 - react
 - redux
@@ -11,12 +12,13 @@ Starter kit for react/redux apps using typescript
 - eslint
 - prettier
 
-## Setup
+### Instructions
 
-You will need node.js and yarn.
+Install node.js
+Install yarn package manager
 
 git clone git@github.com:mbadeen/ts-react-redux-kit.git
 
-yarn install
+run yarn install to install dependencies
 
 begin coding!
