@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-const test = (state = {}, action: string) => {
+const test = (state = {}) => {
   return state;
 };
 
