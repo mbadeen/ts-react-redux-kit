@@ -7,7 +7,7 @@ import '../../styles/globals.css';
 const App = (): JSX.Element => (
   <Router history={createBrowserHistory()}>
     <Switch>
-      <Route exact path='/' component={Home} />
+      <Route exact path="/" component={Home} />
     </Switch>
   </Router>
 );
