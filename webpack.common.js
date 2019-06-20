@@ -3,9 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    app: './src/index.tsx'
-  },
+  entry: './src/index.tsx',
   output: {
     filename: '[name]-[hash:8].js',
     path: path.resolve(__dirname, 'dist')
