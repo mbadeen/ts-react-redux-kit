@@ -13,11 +13,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: path.join(path.resolve(__dirname, './src'), 'index.html')
+      template: path.resolve(__dirname, 'src', 'index.html')
     })
   ],
   resolve: {
-    modules: [path.resolve(__dirname, './src'), path.resolve(__dirname, './node_modules')]
+    modules: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')]
   },
   module: {
     rules: [
