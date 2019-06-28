@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.ts(x?)$/,
         resolve: {
           extensions: ['.tsx', '.ts', '.js']
         },

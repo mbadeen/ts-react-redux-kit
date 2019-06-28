@@ -21,9 +21,9 @@ module.exports = {
     }
   },
   rules: {
+    'import/no-extraneous-dependencies': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'import/no-extraneous-dependencies': 'off'
+    'react-hooks/exhaustive-deps': 'warn'
   },
   plugins: ['react-hooks', 'jsx-a11y'],
   settings: {
@@ -31,4 +31,4 @@ module.exports = {
       version: 'detect'
     }
   }
-};
+}

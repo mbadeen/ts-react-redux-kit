@@ -1,7 +1,6 @@
 module.exports = {
-  semi: true,
+  semi: false,
   singleQuote: true,
   eslintIntegration: true,
-  printWidth: 100,
-  arrowParens: 'always'
-};
+  printWidth: 100
+}

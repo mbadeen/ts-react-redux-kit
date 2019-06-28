@@ -1,8 +1,8 @@
-import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import Home from '../Pages/Home';
-import '../../styles/globals.css';
+import React from 'react'
+import { Router, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
+import Home from '../Pages/Home'
+import '../../styles/globals.css'
 
 const App = (): JSX.Element => (
   <Router history={createBrowserHistory()}>
@@ -10,6 +10,6 @@ const App = (): JSX.Element => (
       <Route exact path="/" component={Home} />
     </Switch>
   </Router>
-);
+)
 
-export default App;
+export default App

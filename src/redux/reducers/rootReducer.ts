@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
 const test = (state = {}) => {
-  return state;
-};
+  return state
+}
 
 const rootReducer = combineReducers({
   test
-});
+})
 
-export default rootReducer;
+export default rootReducer
