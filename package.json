@@ -52,7 +52,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js",
-    "lint": "eslint --ext .ts,.tsx src/",
+    "lint": "eslint --ext .ts,.tsx src/ --fix",
     "csslint": "stylelint **/*.css"
   }
 }
