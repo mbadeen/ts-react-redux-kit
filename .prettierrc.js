@@ -2,5 +2,5 @@ module.exports = {
   semi: false,
   singleQuote: true,
   eslintIntegration: true,
-  printWidth: 80
+  printWidth: 120
 }

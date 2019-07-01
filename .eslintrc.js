@@ -1,14 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: [
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
-    'prettier',
-    'prettier/react'
-  ],
+  extends: ['airbnb-typescript', 'prettier/@typescript-eslint', 'prettier', 'prettier/react'],
   env: {
     browser: true,
     node: true
@@ -25,7 +17,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn'
   },
-  plugins: ['react-hooks', 'jsx-a11y'],
+  plugins: ['react-hooks'],
   settings: {
     react: {
       version: 'detect'
