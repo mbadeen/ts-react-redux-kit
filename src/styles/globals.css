@@ -1,5 +1,33 @@
 * {
   box-sizing: border-box;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3.25rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 2.75rem;
 }

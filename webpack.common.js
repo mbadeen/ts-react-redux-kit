@@ -1,6 +1,6 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -15,7 +15,10 @@ module.exports = {
     })
   ],
   resolve: {
-    modules: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')]
+    modules: [
+      path.resolve(__dirname, 'src'),
+      path.resolve(__dirname, 'node_modules')
+    ]
   },
   module: {
     rules: [
@@ -42,4 +45,4 @@ module.exports = {
       }
     ]
   }
-};
+}
