@@ -1,8 +1,8 @@
 const merge = require('webpack-merge')
-const common = require('./webpack.common.js')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -29,14 +29,15 @@ module.exports = merge(common, {
       {
         test: /\.css$/,
         use: [
+          MiniCssExtractPlugin.loader,
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'css-loader',
             options: {
-              publicPath: './dist'
+              modules: {
+                localIdentName: '[name]-[local]-[hash:base64:5]'
+              },
+              sourceMap: true
             }
-          },
-          {
-            loader: 'css-loader'
           }
         ]
       }
